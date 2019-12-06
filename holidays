@@ -1,0 +1,116 @@
+/* estilos landing holidays */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#530000;
+}
+
+.heading{
+
+    font-family: 'Amatic SC', cursive;
+
+}
+
+.imgficha{
+    position:relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    top:-100px;
+    border-radius: 50%;
+}
+@media (max-width: 1024px) {
+    .imgficha {
+        position:relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top:0px;
+    width: 100%;    
+    padding-bottom: 1em;    
+    }
+  }
+
+
+.bgmain{
+    background-color: #2b5f4f;
+}
+
+.hojaroja{
+    background-image: url("/img/landings/holidays/hojaroja.png");
+    background-position: bottom left; 
+    background-repeat: no-repeat;
+}
+
+.hojaverde{
+    background-image: url("/img/landings/holidays/hojaverde.png");
+    background-position: top right; 
+    background-repeat: no-repeat;
+    
+}
+ 
+.sombra{
+    
+  text-shadow: 2px 2px 4px black;
+}
+
+.separator{
+    background-color: #e1b57e;
+    height: 3px;
+}
+
+.colorplus, .redxmas{
+    background-color: #530000;
+}
+
+.orangexmas{
+    background-color: #ea5e49;
+}
+
+.callbtn{
+    background-color: #c21630;
+}
+
+
+#videoBG {
+    position: fixed;
+    z-index: -1;
+    background-position: top center; 
+    background-size: cover;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:100%;
+        
+    }
+}
+@media (max-width: 1024px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background-image: url('/img/landings/holidays/video/bg-xc.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 1024px;
+        top:-500px;
+    }
+}
+
+#img1 {display:block;}
+#img2 {display:none;}
+@media all and (max-width: 1024px) {
+#img1 {display: none;}
+#img2 {display: block;}
+}
